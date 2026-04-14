@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-background: #f9fafb;
+    --color-surface: #ffffff;
+    --color-text-primary: #111827;
+    --color-text-secondary: #4b5563;
+    --color-border: #e5e7eb;
+  }
+
+  .dark {
+    --color-background: #030712;
+    --color-surface: #111827;
+    --color-text-primary: #e5e7eb;
+    --color-text-secondary: #9ca3af;
+    --color-border: #1f2937;
+  }
+
   body {
-    @apply bg-background text-gray-200 antialiased font-sans overflow-x-hidden;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    @apply antialiased font-sans overflow-x-hidden transition-colors duration-300;
   }
 }
 

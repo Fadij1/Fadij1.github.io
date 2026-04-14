@@ -8,10 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#030712', // slate-950
-        surface: '#111827',    // gray-900
-        primary: '#22d3ee',    // cyan-400
-        secondary: '#3b82f6',  // blue-500
+        // Base layout colors
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        'border-color': 'var(--color-border)',
+        
+        // Content/Text colors (Renamed to avoid "text-text" redundancy)
+        'primary-content': 'var(--color-text-primary)',
+        'secondary-content': 'var(--color-text-secondary)',
+        
+        // Brand/Accent colors
+        primary: '#22d3ee', 
+        secondary: '#3b82f6', 
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

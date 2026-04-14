@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
@@ -58,6 +59,7 @@ function App() {
             <Contact />
           </main>
           <Footer />
+          <ScrollToTop />
         </div>
       )}
     </>
