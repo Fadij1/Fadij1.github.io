@@ -55,6 +55,9 @@ export default function InteractiveTerminal({ isOpen, onClose }) {
           setHistory([]);
           setInput('');
           return;
+        case 'exit':
+          onClose();
+          return;
         default:
           if (cmd.startsWith('cat ')) {
             output = `cat: ${cmd.replace('cat ', '')}: No such file or directory`;
