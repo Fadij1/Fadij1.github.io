@@ -15,6 +15,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: 'About', href: '#about' },
     { name: 'Lab', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
@@ -46,13 +47,17 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Toggle */}
-        <button className="md:hidden text-gray-400 hover:text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? <X /> : <Menu />}
+        {/* Mobile Toggle Button */}
+        <button 
+          className="md:hidden text-gray-400 hover:text-white p-2" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle mobile menu"
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-surface border-b border-gray-800 p-6 flex flex-col gap-4 shadow-xl">
           {navLinks.map((link) => (
@@ -60,11 +65,21 @@ export default function Navbar() {
               key={link.name} 
               href={link.href} 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-gray-300 hover:text-white font-medium"
+              className="text-gray-300 hover:text-white font-medium block w-full py-2"
             >
               {link.name}
             </a>
           ))}
+          {/* Resume button added specifically for mobile view */}
+          <a 
+            href={personalInfo.resumeUrl} 
+            target="_blank" 
+            rel="noreferrer"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-center font-medium border border-primary text-primary px-4 py-3 rounded-md hover:bg-primary/10 transition-colors mt-2"
+          >
+            Resume
+          </a>
         </div>
       )}
     </nav>
