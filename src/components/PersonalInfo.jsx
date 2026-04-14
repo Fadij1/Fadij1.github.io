@@ -24,11 +24,11 @@ export default function PersonalInfo() {
             </h3>
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-center gap-3">
-                <span className="font-bold w-24">Name:</span> {personalInfo.name}
+                 Name:   {personalInfo.name}
               </li>
-              <li className="flex items-center gap-3">
+              {/*<li className="flex items-center gap-3">
                 <span className="font-bold w-24">ID:</span> {personalInfo.studentId}
-              </li>
+              </li>*/}
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-gray-500"/> {personalInfo.location}
               </li>

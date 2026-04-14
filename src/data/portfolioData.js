@@ -163,3 +163,27 @@ export const skills = {
   Tools: ["Git/GitHub", "Jira", "Docker", "VS Code", "Postman", "MATLAB", "Simulink", "Xilinx Vivado", "QuestaSim", "PySpark"], 
   "Soft Skills": ["Agile Methodology", "Technical Leadership", "Cross-functional Collaboration", "Problem Solving"] 
 };
+
+export const blogPosts = [
+  {
+    title: "Architecting a University Management System with Scrum",
+    date: "Nov 2025",
+    readTime: "5 min read",
+    summary: "How we organized our Agile Software Engineering project using a product backlog, sprint planning, and daily standups to deliver a scalable UMS.",
+    tags: ["Agile", "Scrum", "Software Engineering"]
+  },
+  {
+    title: "Context Switching in FreeRTOS on ARM Cortex-M4",
+    date: "Mar 2026",
+    readTime: "8 min read",
+    summary: "Deep dive into the mechanics of RTOS task scheduling, saving state registers, and hardware abstraction on the Tiva C microcontroller.",
+    tags: ["Embedded Systems", "FreeRTOS", "C"]
+  },
+  {
+    title: "Optimizing Q-Learning for a T-Rex Runner Agent",
+    date: "Nov 2025",
+    readTime: "6 min read",
+    summary: "Notes on defining the state space, reward functions, and epsilon-greedy exploration strategies for autonomous gameplay in PyGame.",
+    tags: ["AI", "Reinforcement Learning", "Python"]
+  }
+];

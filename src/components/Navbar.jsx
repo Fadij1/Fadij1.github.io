@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Terminal, Sun, Moon } from 'lucide-react';
+import { Menu, X, Terminal as TerminalIcon, Sun, Moon } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
-export default function Navbar({ toggleTheme, isDark }) {
+export default function Navbar({ toggleTheme, isDark, onOpenTerminal }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,6 +20,7 @@ export default function Navbar({ toggleTheme, isDark }) {
     { name: 'About', href: '#about' },
     { name: 'Lab', href: '#projects' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Notes', href: '#notes' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -33,12 +34,17 @@ export default function Navbar({ toggleTheme, isDark }) {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2 text-white font-bold text-xl group">
-          <Terminal className="text-primary group-hover:text-cyan-300 transition-colors" />
+        <button
+          onClick={onOpenTerminal}
+          className="flex items-center gap-2 text-white font-bold text-xl group cursor-pointer"
+          title="Open Terminal"
+          aria-label="Open Terminal"
+        >
+          <TerminalIcon className="text-primary group-hover:text-cyan-300 transition-colors" />
           <span>
             Fady<span className="text-primary">.dev</span>
           </span>
-        </a>
+        </button>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

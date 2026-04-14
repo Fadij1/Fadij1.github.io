@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Users, BookOpen, Star } from 'lucide-react';
+import { Users, BookOpen, Star } from 'lucide-react';
+import { GithubIcon } from './Contact';
 
 export default function GithubStats() {
   const [stats, setStats] = useState(null);
@@ -18,7 +19,7 @@ export default function GithubStats() {
     <section className="py-12 bg-background">
       <div className="container mx-auto px-6 max-w-4xl text-center">
         <a href={stats.html_url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-2xl font-bold text-white hover:text-primary transition-colors mb-8">
-          <Github size={28} /> Live GitHub Activity
+          <GithubIcon size={28} /> Live GitHub Activity
         </a>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
