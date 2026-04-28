@@ -7,7 +7,7 @@ export const personalInfo = {
   dateOfBirth: "2004-02-21", 
   nationality: "Egyptian",
   location: "Cairo, Egypt", 
-  linkedin: "https://linkedin.com/in/fady-john-9439801a7", 
+  linkedin: "https://www.linkedin.com/in/fady-john-fayek-9439801a7", 
   github: "https://github.com/Fadij1", 
   resumeUrl: "/resume.pdf", 
   education: [
