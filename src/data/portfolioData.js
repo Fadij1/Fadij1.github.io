@@ -192,7 +192,7 @@ export const blogPosts = [
   },
   {
     title: "Optimizing Q-Learning for a T-Rex Runner Agent",
-    date: "Nov 2025",
+    date: "Nov 2025", 
     readTime: "6 min read",
     summary: "Notes on defining the state space, reward functions, and epsilon-greedy exploration strategies for autonomous gameplay in PyGame.",
     tags: ["AI", "Reinforcement Learning", "Python"]
