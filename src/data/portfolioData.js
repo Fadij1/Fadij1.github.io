@@ -16,7 +16,7 @@ export const personalInfo = {
       degree: "Software Engineering", 
       period: "09/2022 - 07/2027", 
       location: "Cairo, Egypt",
-      gpa: "3.13/4" 
+      gpa: "3.15/4" 
     },
     {
       school: "College de la Sainte Famille", 
@@ -33,6 +33,17 @@ export const personalInfo = {
 };
 
 export const projects = [
+  {
+    id: "YOLO",
+    title: "License Plate Detection & Recognition (YOLOv8)", 
+    date: "04/2026",
+    category: "Deep Learning",
+    hook: "Implemented a YOLOv8-based system for real-time license plate detection and recognition.",
+    tech: ["Python", "YOLOv8", "OpenCV", "PyTorch", "EasyOCR"], 
+    description: "Implemented a YOLOv8-based system for real-time license plate detection and recognition, integrating OpenCV for image processing, PyTorch for model training, and EasyOCR for text extraction, achieving high accuracy in diverse lighting and angle conditions.", 
+    architectureDetails: ["YOLOv8 Model Architecture", "OpenCV Image Preprocessing", "EasyOCR Text Extraction"],
+    demoType: "dl-flow"
+  },
   {
     id: "aegis",
     title: "Aegis Protocol: Reliable UDP Transport", 
