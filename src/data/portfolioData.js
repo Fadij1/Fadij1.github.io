@@ -149,35 +149,37 @@ export const experience = [
   {
     role: "Salesforce developer Intern",
     company: "Emaar Misr - Cairo, Egypt",
-    period: "08/2026 - 9/2026",
+    period: "16/08/2026 - 24/9/2026",
     details: "Architected and developed a custom property recommendation system for the sales department within the Salesforce ecosystem using Apex and Lightning Web Components (LWCs), implementing a GPA-based scoring engine to intelligently match clients to ideal properties based on features, budget, and location to optimize the CRM workflow."
   },
   {
     role: "Software Development Intern", 
     company: "MCV (Manufacturing Commercial Vehicles) - Cairo, Egypt", 
-    period: "07/2025 - 08/2025", 
+    period: "01/07/2025 - 31/7/2025", 
     details: "Collaborated on full-stack development of \"LuIZ,\" a course registration web app using ASP.NET Core MVC with CSHTML/Bootstrap frontend, integrated a real-time Python/Flask AI chatbot with Google Gemini, implemented internal APIs, and delivered the project in an agile team environment." 
   },
   {
     role: "ACE Summer School Program", 
     company: "University Of East London - London, United Kingdom", 
-    period: "07/2024", 
+    period: "20/07/2024 - 30/07/2024", 
     details: "Gained hands-on experience with AWS and Azure for IoT and Smart City solutions, performed large-scale data processing with PySpark and Python visualizations, and collaborated internationally to design and present innovative urban analytics projects." 
   }
 ];
 
 export const certificatesAndVolunteering = [
+  "IBM Data Science By Coursera",
+  "Introduction to Generative AI Learning Path By Coursera",
   "Big Data and Data Visualization By University of East London",
-  "Embedded Systems Level 1 By Edges Academy",
   "Artificial Intelligence By National Telecommunication Institute",
+  "Embedded Systems Level 1 By Edges Academy",
   "ASU Career Center Volunteer By University of Ain Shams"
 ];
 
 export const skills = {
-  Languages: ["C++", "C", "Java", "Python", "JavaScript", "MATLAB", "MS-SQL"], 
-  Web: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs"], 
+  Languages: ["C++", "C", "Java","Apex", "Python", "JavaScript", "MATLAB", "MS-SQL"], 
+  Web: ["React.js", "Node.js", "Express.js","Lightning Web Components(LWC)", "MongoDB","SOQL", "JWT Auth", "REST APIs"], 
   Embedded: ["Embedded C", "ARM Cortex-M (Tiva C)", "UART", "I2C", "GPIO", "timers", "ISRs"], 
-  Tools: ["Git/GitHub", "Jira", "Docker", "VS Code", "Postman", "MATLAB", "Simulink", "Xilinx Vivado", "QuestaSim", "PySpark"], 
+  Tools: ["Git/GitHub", "Jira", "Docker","Salesforce", "VS Code", "Postman", "MATLAB", "Simulink", "Xilinx Vivado", "QuestaSim", "PySpark"], 
   "Soft Skills": ["Agile Methodology", "Technical Leadership", "Cross-functional Collaboration", "Problem Solving"] 
 };
 
