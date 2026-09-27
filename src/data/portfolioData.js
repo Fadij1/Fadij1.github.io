@@ -147,6 +147,12 @@ export const projects = [
 
 export const experience = [
   {
+    role: "Salesforce developer Intern",
+    company: "Emaar Misr - Cairo, Egypt",
+    period: "08/2026 - 9/2026",
+    details: "Architected and developed a custom property recommendation system for the sales department within the Salesforce ecosystem using Apex and Lightning Web Components (LWCs), implementing a GPA-based scoring engine to intelligently match clients to ideal properties based on features, budget, and location to optimize the CRM workflow."
+  },
+  {
     role: "Software Development Intern", 
     company: "MCV (Manufacturing Commercial Vehicles) - Cairo, Egypt", 
     period: "07/2025 - 08/2025", 
